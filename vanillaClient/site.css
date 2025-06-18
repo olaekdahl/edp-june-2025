@@ -1,0 +1,20 @@
+    img {
+      border-radius: 50%;
+    }
+
+    p {
+      color: blue;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    .person-card {
+      border: 1px solid blue;
+    }
+
+    #person-cards {
+      background-color: silver;
+      color: red;
+    }
