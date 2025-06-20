@@ -1,2 +1,2 @@
 # People Picker
-This is the repo for teh people picker project
+This is the repo for the people picker project
