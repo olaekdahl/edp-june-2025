@@ -1,11 +1,12 @@
 [
   {
     "id": 101,
-    "first": "Alberto",
+    "first": "Berto",
     "last": "Castro",
     "email": "alberto@gmail.com",
     "phone": "555-1234",
-    "about": "Alberto once scaled Mount Everest in record time, but had to be airlifted off the mountain after a daring rescue mission."
+    "about": "Berto once scaled Mount Everest in record time, but had to be airlifted off the mountain after a daring rescue mission.",
+    "imageUrl": "/assets/images/Berto.png"
   },
   {
     "id": 102,
@@ -13,7 +14,8 @@
     "last": "Kulowski",
     "email": "andrew@gmail.com",
     "phone": "987-6543",
-    "about": "Andrew is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with electricity and running water."
+    "about": "Andrew is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with electricity and running water.",
+    "imageUrl": "/assets/images/Andrew.png"
   },
   {
     "id": 103,
@@ -21,23 +23,26 @@
     "last": "Huppert",
     "email": "chris@gmail.com",
     "phone": "123-4567",
-    "about": "Chris is a passionate gardener who has been known to talk to his plants, claiming they respond better that way."
+    "about": "Chris is a passionate gardener who has been known to talk to his plants, claiming they respond better that way.",
+    "imageUrl": "/assets/images/Chris.png"
   },
   {
     "id": 104,
-    "first": "David",
+    "first": "Chikwendu",
     "last": "Mgbechi",
     "email": "david@gmail.com",
     "phone": "456-7890",
-    "about": "David is a talented musician who once played a sold-out show at the legendary Carnegie Hall, despite having stage fright."
+    "about": "Chikwendu is a talented musician who once played a sold-out show at the legendary Carnegie Hall, despite having stage fright.",
+    "imageUrl": "/assets/images/Chikwendu.png"
   },
   {
     "id": 105,
-    "first": "Emmanuel",
+    "first": "Manny",
     "last": "Kurinaah",
     "email": "emmanuel@gmail.com",
     "phone": "789-0123",
-    "about": "Emmanuel is an avid traveler who once got lost in the Amazon rainforest for three days, only to emerge with a newfound appreciation for the local wildlife."
+    "about": "Manny is an avid traveler who once got lost in the Amazon rainforest for three days, only to emerge with a newfound appreciation for the local wildlife.",
+    "imageUrl": "/assets/images/Manny.png"
   },
   {
     "id": 106,
@@ -45,7 +50,8 @@
     "last": "Farooqui",
     "email": "faiz@gmail.com",
     "phone": "555-2468",
-    "about": "Faiz is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list."
+    "about": "Faiz is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list.",
+    "imageUrl": "/assets/images/Faiz.png"
   },
   {
     "id": 107,
@@ -53,7 +59,8 @@
     "last": "Tao",
     "email": "grace@gmail.com",
     "phone": "987-1357",
-    "about": "Grace is a passionate artist who once painted a mural on the side of a building that became a local landmark, attracting tourists from all over the world."
+    "about": "Grace is a passionate artist who once painted a mural on the side of a building that became a local landmark, attracting tourists from all over the world.",
+    "imageUrl": "/assets/images/Grace.png"
   },
   {
     "id": 108,
@@ -61,7 +68,8 @@
     "last": "Cacela",
     "email": "jack@gmail.com",
     "phone": "123-8901",
-    "about": "Jack is an avid hiker who once stumbled upon a hidden waterfall while exploring a remote mountain trail, and has kept its location a closely guarded secret ever since."
+    "about": "Jack is an avid hiker who once stumbled upon a hidden waterfall while exploring a remote mountain trail, and has kept its location a closely guarded secret ever since.",
+    "imageUrl": "/assets/images/Jack.png"
   },
   {
     "id": 109,
@@ -69,7 +77,8 @@
     "last": "Long",
     "email": "luo@gmail.com",
     "phone": "456-2468",
-    "about": "Luo is a skilled calligrapher who once created a massive work of art that was displayed in a prestigious gallery, earning him international acclaim."
+    "about": "Luo is a skilled calligrapher who once created a massive work of art that was displayed in a prestigious gallery, earning him international acclaim.",
+    "imageUrl": "/assets/images/Luo.png"
   },
   {
     "id": 110,
@@ -77,23 +86,26 @@
     "last": "Clausen",
     "email": "maranda@gmail.com",
     "phone": "789-1357",
-    "about": "Maranda is a passionate cook who once won a televised cooking competition, beating out renowned chefs from around the world."
+    "about": "Maranda is a passionate cook who once won a televised cooking competition, beating out renowned chefs from around the world.",
+    "imageUrl": "/assets/images/Maranda.png"
   },
   {
     "id": 111,
-    "first": "Marshall",
+    "first": "Marsh",
     "last": "Flowers",
     "email": "marshall@gmail.com",
     "phone": "555-8901",
-    "about": "Marshall is an avid birdwatcher who once discovered a previously unknown species of bird, which was subsequently named after him."
+    "about": "Marsh is an avid birdwatcher who once discovered a previously unknown species of bird, which was subsequently named after him.",
+    "imageUrl": "/assets/images/Marsh.png"
   },
   {
     "id": 112,
-    "first": "Michael",
+    "first": "Mike",
     "last": "Swan",
     "email": "michael@gmail.com",
     "phone": "987-2468",
-    "about": "Michael is a skilled photographer who once captured a breathtaking image of a solar eclipse that went viral and earned him a prestigious photography award."
+    "about": "Mike is a skilled photographer who once captured a breathtaking image of a solar eclipse that went viral and earned him a prestigious photography award.",
+    "imageUrl": "/assets/images/Mike.png"
   },
   {
     "id": 113,
@@ -101,7 +113,8 @@
     "last": "Saravanan",
     "email": "niteesh@gmail.com",
     "phone": "123-1357",
-    "about": "Niteesh is a passionate runner who once completed a grueling ultramarathon through the Sahara Desert, finishing in the top 10 despite the extreme conditions."
+    "about": "Niteesh is a passionate runner who once completed a grueling ultramarathon through the Sahara Desert, finishing in the top 10 despite the extreme conditions.",
+    "imageUrl": "/assets/images/Niteesh.png"
   },
   {
     "id": 114,
@@ -109,7 +122,8 @@
     "last": "Nathan",
     "email": "nitin@gmail.com",
     "phone": "456-8901",
-    "about": "Nitin is a skilled chess player who once defeated a world champion in a televised tournament, shocking the chess community."
+    "about": "Nitin is a skilled chess player who once defeated a world champion in a televised tournament, shocking the chess community.",
+    "imageUrl": "/assets/images/Nitin.png"
   },
   {
     "id": 115,
@@ -117,7 +131,8 @@
     "last": "Patel",
     "email": "raj@gmail.com",
     "phone": "789-2468",
-    "about": "Raj is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition."
+    "about": "Raj is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition.",
+    "imageUrl": "/assets/images/Raj.png"
   },
   {
     "id": 116,
@@ -125,7 +140,8 @@
     "last": "Saju",
     "email": "sajin@gmail.com",
     "phone": "555-3691",
-    "about": "Sajin is a talented musician who once performed a sold-out concert at the Sydney Opera House, earning him critical acclaim from music critics around the world."
+    "about": "Jin is a talented musician who once performed a sold-out concert at the Sydney Opera House, earning him critical acclaim from music critics around the world.",
+    "imageUrl": "/assets/images/Jin.png"
   },
   {
     "id": 117,
@@ -133,15 +149,17 @@
     "last": "Morgan",
     "email": "samuel@gmail.com",
     "phone": "987-4512",
-    "about": "Samuel is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with a zip line and a secret trap door."
+    "about": "Samuel is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with a zip line and a secret trap door.",
+    "imageUrl": "/assets/images/Sam.png"
   },
   {
     "id": 118,
-    "first": "Steven",
+    "first": "Steve",
     "last": "Shaw",
     "email": "steven@gmail.com",
     "phone": "123-6789",
-    "about": "Steven is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition, earning him international recognition."
+    "about": "Steve is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition, earning him international recognition.",
+    "imageUrl": "/assets/images/Steve.png"
   },
   {
     "id": 119,
@@ -149,18 +167,7 @@
     "last": "Wallace",
     "email": "terrance@gmail.com",
     "phone": "456-0123",
-    "about": "Terrance is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list and a lucrative acquisition deal."
-  },
-  {
-    "id": 120,
-    "first": "Atlas",
-    "last": "Ekdahl",
-    "email": "atlas@gmail.com"
-  },
-  {
-    "id": 121,
-    "first": "Atlas",
-    "last": "Ekdahl",
-    "email": "atlas@gmail.com"
+    "about": "Terrance is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list and a lucrative acquisition deal.",
+    "imageUrl": "/assets/images/Terrance.png"
   }
 ]
