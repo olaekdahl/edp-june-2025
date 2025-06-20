@@ -1,0 +1,8 @@
+name: Echo Text
+on: [push]
+jobs:
+    echo-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Say hello
+              run: echo "Let's do an eval..."
