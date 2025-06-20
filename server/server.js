@@ -14,6 +14,7 @@ app.get('/api/people', (req, res) => {
 
 app.listen(port)
 
+// This is a comment....
 
 function choosePerson() {
   const chosenPerson = people[Math.floor(Math.random() * people.length)]
