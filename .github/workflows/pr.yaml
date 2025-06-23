@@ -1,11 +1,25 @@
-name: Echo Text
+name: Run unit tests on PR
 on: 
     pull_request:
       branches:
           - main
 jobs:
-    echo-job:
+    run-tests-job:
         runs-on: ubuntu-latest
         steps:
-            - name: Say hello
-              run: git clone 
+            - name: Checkout repo
+              uses: actions/checkout@v3
+            - name: List content
+              run: ls
+            - name: Secret Scanning
+              uses: trufflesecurity/trufflehog@main
+              with:
+                extra_args: --results=verified,unknown
+            - name: Install Node.js
+              uses: actions/setup-node@v4
+            - name: Run tests
+              run: |
+                cd server
+                npm install
+                # npm test
+            
