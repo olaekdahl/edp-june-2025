@@ -24,7 +24,7 @@ img {
   border-radius: 50%;
 }
 
-#person-cards {
+#unpicked-people {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
