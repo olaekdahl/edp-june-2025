@@ -1,11 +1,11 @@
 name: Echo text on push to main branch
-on: 
-    push:
-        branches:
-            - main
+on:
+  push:
+    branches:
+      - main
 jobs:
-    echo-job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Say hello
-              run: echo "This runs on push"
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "This runs on push"

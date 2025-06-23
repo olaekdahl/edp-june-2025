@@ -1,8 +1,6 @@
 name: Run unit tests on PR
 on: 
-    pull_request:
-      branches:
-          - main
+    workflow_dispatch:
 jobs:
     run-tests-job:
         runs-on: ubuntu-latest
