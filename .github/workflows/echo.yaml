@@ -1,4 +1,4 @@
-name: Echo Text
+name: Echo text on push to all branches
 on: [push]
 jobs:
     echo-job:

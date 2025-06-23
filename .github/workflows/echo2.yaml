@@ -1,5 +1,8 @@
-name: Echo Text
-on: [push]
+name: Echo text on push to main branch
+on: 
+    push:
+        branches:
+            - main
 jobs:
     echo-job:
         runs-on: ubuntu-latest
