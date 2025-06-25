@@ -15,7 +15,7 @@ export const getAllPeople = () => people;
  * @param {number} id 
  * @returns the person with that id
  */
-export const getPerson = (id) => { }
+export const getPerson = (id) => people.find(p => p.id === id)
 
 /**
  * Inserts a new person into the database
@@ -26,6 +26,33 @@ export const addPerson = (person) => {
   const newPerson = { id: getNextId(people), ...person }
   people = [...people, newPerson];
   savePeopleToDb();
+  return newPerson;
+}
+
+/**
+ * Deletes a person from the DB
+ * @param {number} id The id of the person to delete
+ * @returns {Promise<void>} A promise that resolves to void
+ */
+export const deletePerson = async (id) => {
+  people = people.filter(p => p.id === id)
+  savePeopleToDb()
+}
+
+/**
+ * Updates/changes a person in the DB with the person passed in
+ * @param {id} personId
+ * @param {Person} newPerson
+ * @returns {Promise<Person>} A promise that resolves to the updated person
+ */
+export const updatePerson = async (id, newPerson) => {
+  const thePerson = await getPerson(id)
+  for (let prop in thePerson) {
+    if (prop === "id") continue; // Skip the id - should never change
+    thePerson[prop] = newPerson[prop]
+  }
+  savePeopleToDb()
+  return thePerson;
 }
 
 /**************************************************************/
