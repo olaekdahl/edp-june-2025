@@ -6,7 +6,7 @@
     "email": "alberto@gmail.com",
     "phone": "555-1234",
     "about": "Berto once scaled Mount Everest in record time, but had to be airlifted off the mountain after a daring rescue mission.",
-    "imageUrl": "/assets/images/Berto.png"
+    "imageUrl": "http://localhost:3300/assets/images/Berto.png"
   },
   {
     "id": 102,
@@ -15,7 +15,7 @@
     "email": "andrew@gmail.com",
     "phone": "987-6543",
     "about": "Andrew is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with electricity and running water.",
-    "imageUrl": "/assets/images/Andrew.png"
+    "imageUrl": "http://localhost:3300/assets/images/Andrew.png"
   },
   {
     "id": 103,
@@ -24,7 +24,7 @@
     "email": "chris@gmail.com",
     "phone": "123-4567",
     "about": "Chris is a passionate gardener who has been known to talk to his plants, claiming they respond better that way.",
-    "imageUrl": "/assets/images/Chris.png"
+    "imageUrl": "http://localhost:3300/assets/images/Chris.png"
   },
   {
     "id": 104,
@@ -33,7 +33,7 @@
     "email": "david@gmail.com",
     "phone": "456-7890",
     "about": "Chikwendu is a talented musician who once played a sold-out show at the legendary Carnegie Hall, despite having stage fright.",
-    "imageUrl": "/assets/images/Chikwendu.png"
+    "imageUrl": "http://localhost:3300/assets/images/Chikwendu.png"
   },
   {
     "id": 105,
@@ -42,7 +42,7 @@
     "email": "emmanuel@gmail.com",
     "phone": "789-0123",
     "about": "Manny is an avid traveler who once got lost in the Amazon rainforest for three days, only to emerge with a newfound appreciation for the local wildlife.",
-    "imageUrl": "/assets/images/Manny.png"
+    "imageUrl": "http://localhost:3300/assets/images/Manny.png"
   },
   {
     "id": 106,
@@ -51,7 +51,7 @@
     "email": "faiz@gmail.com",
     "phone": "555-2468",
     "about": "Faiz is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list. Despite a slow start in duck racing, experts project Faiz to end the bootcamp with 5-10 wins",
-    "imageUrl": "/assets/images/Faiz.png"
+    "imageUrl": "http://localhost:3300/assets/images/Faiz.png"
   },
   {
     "id": 107,
@@ -60,7 +60,7 @@
     "email": "grace@gmail.com",
     "phone": "987-1357",
     "about": "Grace is a passionate artist who once painted a mural on the side of a building that became a local landmark, attracting tourists from all over the world.",
-    "imageUrl": "/assets/images/Grace.png"
+    "imageUrl": "http://localhost:3300/assets/images/Grace.png"
   },
   {
     "id": 108,
@@ -69,7 +69,7 @@
     "email": "jack@gmail.com",
     "phone": "123-8901",
     "about": "Jack is an avid hiker who once stumbled upon a hidden waterfall while exploring a remote mountain trail, and has kept its location a closely guarded secret ever since.",
-    "imageUrl": "/assets/images/Jack.png"
+    "imageUrl": "http://localhost:3300/assets/images/Jack.png"
   },
   {
     "id": 109,
@@ -78,7 +78,7 @@
     "email": "luo@gmail.com",
     "phone": "456-2468",
     "about": "Luo is a skilled calligrapher who once created a massive work of art that was displayed in a prestigious gallery, earning him international acclaim.",
-    "imageUrl": "/assets/images/Luo.png"
+    "imageUrl": "http://localhost:3300/assets/images/Luo.png"
   },
   {
     "id": 110,
@@ -87,7 +87,7 @@
     "email": "maranda@gmail.com",
     "phone": "789-1357",
     "about": "Maranda is a passionate cook who once won a televised cooking competition, beating out renowned chefs from around the world.",
-    "imageUrl": "/assets/images/Maranda.png"
+    "imageUrl": "http://localhost:3300/assets/images/Maranda.png"
   },
   {
     "id": 111,
@@ -96,7 +96,7 @@
     "email": "marshall@gmail.com",
     "phone": "555-8901",
     "about": "Marsh is an avid birdwatcher who once discovered a previously unknown species of bird, which was subsequently named after him.",
-    "imageUrl": "/assets/images/Marsh.png"
+    "imageUrl": "http://localhost:3300/assets/images/Marsh.png"
   },
   {
     "id": 112,
@@ -105,7 +105,7 @@
     "email": "michael@gmail.com",
     "phone": "987-2468",
     "about": "Mike is a skilled photographer who once captured a breathtaking image of a solar eclipse that went viral and earned him a prestigious photography award.",
-    "imageUrl": "/assets/images/Mike.png"
+    "imageUrl": "http://localhost:3300/assets/images/Mike.png"
   },
   {
     "id": 113,
@@ -114,7 +114,7 @@
     "email": "niteesh@gmail.com",
     "phone": "123-1357",
     "about": "Niteesh is a passionate runner who once completed a grueling ultramarathon through the Sahara Desert, finishing in the top 10 despite the extreme conditions.",
-    "imageUrl": "/assets/images/Niteesh.png"
+    "imageUrl": "http://localhost:3300/assets/images/Niteesh.png"
   },
   {
     "id": 114,
@@ -123,7 +123,7 @@
     "email": "nitin@gmail.com",
     "phone": "456-8901",
     "about": "Nitin is a skilled chess player who once defeated a world champion in a televised tournament, shocking the chess community.",
-    "imageUrl": "/assets/images/Nitin.png"
+    "imageUrl": "http://localhost:3300/assets/images/Nitin.png"
   },
   {
     "id": 115,
@@ -132,7 +132,7 @@
     "email": "raj@gmail.com",
     "phone": "789-2468",
     "about": "Raj is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition.",
-    "imageUrl": "/assets/images/Raj.png"
+    "imageUrl": "http://localhost:3300/assets/images/Raj.png"
   },
   {
     "id": 116,
@@ -141,7 +141,7 @@
     "email": "sajin@gmail.com",
     "phone": "555-3691",
     "about": "Jin is a talented musician who once performed a sold-out concert at the Sydney Opera House, earning him critical acclaim from music critics around the world.",
-    "imageUrl": "/assets/images/Jin.png"
+    "imageUrl": "http://localhost:3300/assets/images/Jin.png"
   },
   {
     "id": 117,
@@ -150,7 +150,7 @@
     "email": "samuel@gmail.com",
     "phone": "987-4512",
     "about": "Samuel is a skilled woodworker who once built a fully functional treehouse in his backyard, complete with a zip line and a secret trap door.",
-    "imageUrl": "/assets/images/Sam.png"
+    "imageUrl": "http://localhost:3300/assets/images/Sam.png"
   },
   {
     "id": 118,
@@ -159,7 +159,7 @@
     "email": "steven@gmail.com",
     "phone": "123-6789",
     "about": "Steve is a passionate gardener who once created a stunning bonsai tree that was featured in a prestigious horticultural exhibition, earning him international recognition.",
-    "imageUrl": "/assets/images/Steve.png"
+    "imageUrl": "http://localhost:3300/assets/images/Steve.png"
   },
   {
     "id": 119,
@@ -168,6 +168,6 @@
     "email": "terrance@gmail.com",
     "phone": "456-0123",
     "about": "Terrance is a skilled programmer who once developed a mobile app that became a viral sensation, earning him a spot on the Forbes 30 Under 30 list and a lucrative acquisition deal.",
-    "imageUrl": "/assets/images/Terrance.png"
+    "imageUrl": "http://localhost:3300/assets/images/Terrance.png"
   }
 ]

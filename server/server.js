@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 // If you want to log the request, uncomment the next line.
-// app.use(logger)
+//app.use(logger)
 
 //#region People routes
 app.get('/api/people', async (req, res) => {
@@ -77,12 +77,13 @@ app.post("/api/people", async (req, res) => {
 //#endregion
 
 // Now look for static content under the vanillaClient folder
-app.use(express.static('../vanillaClient'))
+//app.use(express.static('../vanillaClient'))
+app.use('/assets', express.static('assets'))
 
 app.listen(port, () => console.log(`Listening for http requests on port ${port}`))
 
 /** Utility functions */
 function logger(req, res, next) {
-  console.log({ req, res });
+  console.log({ req });
   next();
 }
