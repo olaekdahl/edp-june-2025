@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { People } from './People';
 import { fetchPeople } from './api/people';
 import { Person } from './Person';
+import './PeoplePicker.css'
 
 export const PeoplePicker = () => {
   const [pickedPerson, setPickedPerson] = useState(undefined)

@@ -1,9 +1,3 @@
-#picked-person {
-  * {
-    max-width: 300px;
-  }
-}
-
 /* Navbar styling with native CSS nesting */
 body {
   padding-top: 40px;
