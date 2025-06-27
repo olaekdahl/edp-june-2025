@@ -16,6 +16,9 @@
   /* Text color that auto-adapts to lite backgrounds */
   --on-lite: color-contrast(var(--lite1) vs black, white);
 
+}
+
+body {
   color: var(--dark1);
   background-color: var(--lite1);
 }

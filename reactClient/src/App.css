@@ -3,3 +3,36 @@
     max-width: 300px;
   }
 }
+
+/* Navbar styling with native CSS nesting */
+body {
+  padding-top: 40px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--lite3, #e6f7fa);
+
+  a {
+    color: var(--dark3, #0a5c81);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover,
+    &.active {
+      background: var(--dark3, #0a5c81);
+      color: #fff;
+    }
+  }
+}
