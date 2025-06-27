@@ -1,0 +1,21 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  /* Calculating tetradic (quad) colors that supposedly look good together */
+  --dark1: #058120;
+  --dark2: hsl(from var(--dark1) calc(h + 90) s l);
+  --dark3: hsl(from var(--dark1) calc(h + 180) s l);
+  --dark4: hsl(from var(--dark1) calc(h + 270) s l);
+  /* Optional text contrast helper */
+  --on-dark: color-contrast(var(--dark1) vs white, black);
+
+  /* Lightened variants (for backgrounds where you want to put text on top) */
+  --lite1: color-mix(in srgb, white 80%, var(--dark1) 20%);
+  --lite2: color-mix(in srgb, white 80%, var(--dark2) 20%);
+  --lite3: color-mix(in srgb, white 80%, var(--dark3) 20%);
+  --lite4: color-mix(in srgb, white 80%, var(--dark4) 20%);
+  /* Text color that auto-adapts to lite backgrounds */
+  --on-lite: color-contrast(var(--lite1) vs black, white);
+
+  color: var(--dark1);
+  background-color: var(--lite1);
+}
