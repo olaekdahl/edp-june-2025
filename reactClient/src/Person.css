@@ -1,0 +1,48 @@
+.Person {
+  border: 1px solid var(--dark2);
+  border-radius: 12px;
+  background: var(--lite2);
+  box-shadow: 5px 5px 5px var(--dark2);
+  /* flex: 0 1 300px; */
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 300px;
+  margin: 16px;
+  padding: 24px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 16px var(--dark3);
+  }
+
+  >img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--dark3);
+    margin-bottom: 16px;
+    background: var(--lite2);
+  }
+
+  >h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: var(--dark3);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  >p {
+    margin: 4px 0;
+    color: var(--dark3);
+    font-size: 0.98rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+}

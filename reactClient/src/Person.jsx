@@ -1,7 +1,8 @@
+import './Person.css'
 export const Person = ({ person }) => {
   return (
     <>
-      <section className="person-card">
+      <section className="Person">
         <img src={person?.imageUrl} alt={person?.first} />
         <h3>{person?.first} {person?.last}</h3>
         <p>Email: {person?.email}</p>
