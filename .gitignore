@@ -1,2 +1,5 @@
 node_modules
 .vscode
+
+/data/db/*   // ignore the files inside of data/db ...
+!/data/db   // ... but not the folder itself
