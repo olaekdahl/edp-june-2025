@@ -1,8 +1,7 @@
 import express from 'express';  // Module (new) imports
-// const express = require('express')  // CommonJS (old) imports
 import cors from 'cors';
-//import { getAllPeople, getPerson, addPerson, updatePerson, deletePerson } from './fileRepo.js'
-import { getAllPeople, getPerson, addPerson, updatePerson, deletePerson } from './mongoRepo.js'
+//import { getAllPeople, getPerson, addPerson, updatePerson, deletePerson, closeDataServer } from './fileRepo.js'
+import { getAllPeople, getPerson, addPerson, updatePerson, deletePerson, closeDataServer } from './mongoRepo.js'
 
 const port = 3300;
 const app = express();
@@ -10,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 // If you want to log the request, uncomment the next line.
-app.use(logger)
+//app.use(logger)
 
 //#region People routes
 app.get('/api/people', async (req, res) => {
@@ -43,7 +42,6 @@ app.delete("/api/people/:id", async (req, res) => {
   res.status(200).send(`'Person ${id}' successfully deleted`)
 });
 
-// TODO app.put()
 app.put("/api/people/:id", async (req, res) => {
   res.set('Allow', 'GET, POST, PATCH, DELETE');
   res.status(405).send()
@@ -77,14 +75,23 @@ app.post("/api/people", async (req, res) => {
 });
 //#endregion
 
-// Now look for static content under the vanillaClient folder
-//app.use(express.static('../vanillaClient'))
+// Now look for static content under the assets folder
 app.use('/assets', express.static('assets'))
 
 app.listen(port, () => console.log(`Listening for http requests on port ${port}`))
 
+// When the server is shutting down, gracefully close connection to the DB
+process.on('SIGINT', () => {
+  console.log("Shutting down the data server.");
+  closeDataServer();
+  process.exit(0);
+});
+
 /** Utility functions */
+
 function logger(req, res, next) {
-  console.log(`${req.method}: ${req.url}\n`, "headers", req.rawHeaders, "\nbody\n", req.body);
+  console.log(`${req.method}: ${req.url}\n`, "headers", req.rawHeaders);
+  if (req.body)
+    console.log(`body\n${JSON.stringify(req.body)}`)
   next();
 }

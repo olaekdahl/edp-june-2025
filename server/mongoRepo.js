@@ -1,17 +1,26 @@
 import { MongoClient, ObjectId } from 'mongodb';
 
 // Get connection to the mongo db
-const url = "mongodb://localhost:27017";
+let db;
+let client;
+let peopleCollection;
+try {
+  const url = "mongodb://localhost:27017";
+  client = await MongoClient.connect(url);
+  db = client.db("peoplepicker");
+  peopleCollection = db.collection("people");
+
+} catch (ex) {
+  console.error(`Couldn't connect to Mongo at ${url}. Error: ${ex.message}`)
+  throw ex
+}
 
 /**
  * Retrieves all people in the DB
  * @returns {Promise<Person[]>} A promise that resolves to all people
  */
 export const getAllPeople = async () => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const data = await collection.find().toArray();
+  const data = await peopleCollection.find().toArray();
   return data;
 };
 
@@ -23,10 +32,7 @@ export const getAllPeople = async () => {
  * Attempts to convert the id to a number if possible.
  */
 export const getPerson = async (id) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const person = await collection.findOne({ id: +id });
+  const person = await peopleCollection.findOne({ id: +id });
   return person;
 };
 
@@ -36,10 +42,7 @@ export const getPerson = async (id) => {
  * @returns {Promise<Person|null>} A promise that resolves to the person found or null if no person exists with that ObjectId.
  */
 export const getPersonByObjectId = async (oid) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const person = await collection.findOne({ _id: ObjectId.createFromHexString(oid) });
+  const person = await peopleCollection.findOne({ _id: ObjectId.createFromHexString(oid) });
   return person;
 };
 
@@ -49,10 +52,7 @@ export const getPersonByObjectId = async (oid) => {
  * @returns {Promise<Person|undefined>} A promise that resolves to the person found or undefined if no person exists with that name
  */
 export const getPersonByFirstName = async (firstName) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const person = await collection.findOne({ firstName: firstName });
+  const person = await peopleCollection.findOne({ firstName: firstName });
   return person;
 };
 
@@ -62,10 +62,7 @@ export const getPersonByFirstName = async (firstName) => {
  * @returns {Promise<Person>} A promise that resolves to the new person added -- with their DB id!
  */
 export const addPerson = async (newPerson) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const result = await collection.insertOne(newPerson);
+  const result = await peopleCollection.insertOne(newPerson);
   return result;
 };
 
@@ -75,10 +72,7 @@ export const addPerson = async (newPerson) => {
  * @returns {Promise<void>} A promise that resolves to void
  */
 export const deletePerson = async (id) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const result = await collection.deleteOne({ id: +id });
+  const result = await peopleCollection.deleteOne({ id: +id });
   return result;
 };
 
@@ -90,9 +84,12 @@ export const deletePerson = async (id) => {
  * newPerson must have an id. 
  */
 export const updatePerson = async (id, newPerson) => {
-  const client = await MongoClient.connect(url);
-  const db = client.db("peoplepicker");
-  const collection = db.collection("people");
-  const result = await collection.updateOne({ id: +id }, { $set: newPerson });
+  const result = await peopleCollection.updateOne({ id: +id }, { $set: newPerson });
   return result;
 };
+
+
+// Disconnect cleanly from the DB server
+export function closeDataServer() {
+  client.close();
+}
