@@ -9,7 +9,6 @@ try {
   client = await MongoClient.connect(url);
   db = client.db("peoplepicker");
   peopleCollection = db.collection("people");
-
 } catch (ex) {
   console.error(`Couldn't connect to Mongo at ${url}. Error: ${ex.message}`)
   throw ex
@@ -19,10 +18,7 @@ try {
  * Retrieves all people in the DB
  * @returns {Promise<Person[]>} A promise that resolves to all people
  */
-export const getAllPeople = async () => {
-  const data = await peopleCollection.find().toArray();
-  return data;
-};
+export const getAllPeople = async () => await peopleCollection.find().toArray();
 
 /**
  * Finds the person with the provided id.
